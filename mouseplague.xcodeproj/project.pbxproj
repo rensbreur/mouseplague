@@ -1,0 +1,342 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E0CF26923A29704009BDDFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E0CF26823A29704009BDDFB /* Assets.xcassets */; };
+		2E0CF26F23A29704009BDDFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0CF26E23A29704009BDDFB /* main.m */; };
+		2E0CF27823A29776009BDDFB /* MiceListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0CF27723A29776009BDDFB /* MiceListener.m */; };
+		2E0CF27B23A2978C009BDDFB /* MouseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0CF27A23A2978C009BDDFB /* MouseHandler.m */; };
+		2E23DF0023B122EF0095AF25 /* NSScreen+Conversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E23DEFF23B122EF0095AF25 /* NSScreen+Conversion.m */; };
+		2E23DF0323B122F70095AF25 /* ArrowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E23DF0123B122F70095AF25 /* ArrowView.m */; };
+		2E2BE3A923B2439A00DD6F76 /* MouseHIDReportReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BE3A823B2439A00DD6F76 /* MouseHIDReportReader.m */; };
+		2E2BE3AC23B2499500DD6F76 /* MouseClick.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BE3AB23B2499500DD6F76 /* MouseClick.m */; };
+		2E2BE3AF23B24ABA00DD6F76 /* MouseWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BE3AE23B24ABA00DD6F76 /* MouseWindowController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2E0CF26223A29702009BDDFB /* mouseplague.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mouseplague.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E0CF26823A29704009BDDFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2E0CF26D23A29704009BDDFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E0CF26E23A29704009BDDFB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2E0CF27623A29776009BDDFB /* MiceListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MiceListener.h; sourceTree = "<group>"; };
+		2E0CF27723A29776009BDDFB /* MiceListener.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MiceListener.m; sourceTree = "<group>"; };
+		2E0CF27923A2978C009BDDFB /* MouseHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MouseHandler.h; sourceTree = "<group>"; };
+		2E0CF27A23A2978C009BDDFB /* MouseHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MouseHandler.m; sourceTree = "<group>"; };
+		2E23DEFE23B122EE0095AF25 /* NSScreen+Conversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSScreen+Conversion.h"; sourceTree = "<group>"; };
+		2E23DEFF23B122EF0095AF25 /* NSScreen+Conversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSScreen+Conversion.m"; sourceTree = "<group>"; };
+		2E23DF0123B122F70095AF25 /* ArrowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrowView.m; sourceTree = "<group>"; };
+		2E23DF0223B122F70095AF25 /* ArrowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrowView.h; sourceTree = "<group>"; };
+		2E2BE3A723B2439A00DD6F76 /* MouseHIDReportReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MouseHIDReportReader.h; sourceTree = "<group>"; };
+		2E2BE3A823B2439A00DD6F76 /* MouseHIDReportReader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MouseHIDReportReader.m; sourceTree = "<group>"; };
+		2E2BE3AA23B2499500DD6F76 /* MouseClick.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MouseClick.h; sourceTree = "<group>"; };
+		2E2BE3AB23B2499500DD6F76 /* MouseClick.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MouseClick.m; sourceTree = "<group>"; };
+		2E2BE3AD23B24ABA00DD6F76 /* MouseWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MouseWindowController.h; sourceTree = "<group>"; };
+		2E2BE3AE23B24ABA00DD6F76 /* MouseWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MouseWindowController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E0CF25F23A29702009BDDFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E0CF25923A29702009BDDFB = {
+			isa = PBXGroup;
+			children = (
+				2E0CF26423A29702009BDDFB /* mouseplague */,
+				2E0CF26323A29702009BDDFB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2E0CF26323A29702009BDDFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E0CF26223A29702009BDDFB /* mouseplague.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E0CF26423A29702009BDDFB /* mouseplague */ = {
+			isa = PBXGroup;
+			children = (
+				2E0CF26E23A29704009BDDFB /* main.m */,
+				2E0CF27623A29776009BDDFB /* MiceListener.h */,
+				2E0CF27723A29776009BDDFB /* MiceListener.m */,
+				2E0CF27923A2978C009BDDFB /* MouseHandler.h */,
+				2E0CF27A23A2978C009BDDFB /* MouseHandler.m */,
+				2E2BE3AD23B24ABA00DD6F76 /* MouseWindowController.h */,
+				2E2BE3AE23B24ABA00DD6F76 /* MouseWindowController.m */,
+				2E2BE3A723B2439A00DD6F76 /* MouseHIDReportReader.h */,
+				2E2BE3A823B2439A00DD6F76 /* MouseHIDReportReader.m */,
+				2E23DEFE23B122EE0095AF25 /* NSScreen+Conversion.h */,
+				2E23DEFF23B122EF0095AF25 /* NSScreen+Conversion.m */,
+				2E2BE3AA23B2499500DD6F76 /* MouseClick.h */,
+				2E2BE3AB23B2499500DD6F76 /* MouseClick.m */,
+				2E23DF0223B122F70095AF25 /* ArrowView.h */,
+				2E23DF0123B122F70095AF25 /* ArrowView.m */,
+				2E0CF26823A29704009BDDFB /* Assets.xcassets */,
+				2E0CF26D23A29704009BDDFB /* Info.plist */,
+			);
+			path = mouseplague;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E0CF26123A29702009BDDFB /* mouseplague */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E0CF27323A29704009BDDFB /* Build configuration list for PBXNativeTarget "mouseplague" */;
+			buildPhases = (
+				2E0CF25E23A29702009BDDFB /* Sources */,
+				2E0CF25F23A29702009BDDFB /* Frameworks */,
+				2E0CF26023A29702009BDDFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mouseplague;
+			productName = mouseplague;
+			productReference = 2E0CF26223A29702009BDDFB /* mouseplague.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E0CF25A23A29702009BDDFB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Rens Breur";
+				TargetAttributes = {
+					2E0CF26123A29702009BDDFB = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = 2E0CF25D23A29702009BDDFB /* Build configuration list for PBXProject "mouseplague" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2E0CF25923A29702009BDDFB;
+			productRefGroup = 2E0CF26323A29702009BDDFB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E0CF26123A29702009BDDFB /* mouseplague */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E0CF26023A29702009BDDFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E0CF26923A29704009BDDFB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E0CF25E23A29702009BDDFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E23DF0323B122F70095AF25 /* ArrowView.m in Sources */,
+				2E0CF27B23A2978C009BDDFB /* MouseHandler.m in Sources */,
+				2E2BE3A923B2439A00DD6F76 /* MouseHIDReportReader.m in Sources */,
+				2E2BE3AC23B2499500DD6F76 /* MouseClick.m in Sources */,
+				2E0CF26F23A29704009BDDFB /* main.m in Sources */,
+				2E23DF0023B122EF0095AF25 /* NSScreen+Conversion.m in Sources */,
+				2E0CF27823A29776009BDDFB /* MiceListener.m in Sources */,
+				2E2BE3AF23B24ABA00DD6F76 /* MouseWindowController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2E0CF27123A29704009BDDFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2E0CF27223A29704009BDDFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2E0CF27423A29704009BDDFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = mouseplague/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eu.rensbr.mouseplague;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2E0CF27523A29704009BDDFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = mouseplague/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eu.rensbr.mouseplague;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E0CF25D23A29702009BDDFB /* Build configuration list for PBXProject "mouseplague" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E0CF27123A29704009BDDFB /* Debug */,
+				2E0CF27223A29704009BDDFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E0CF27323A29704009BDDFB /* Build configuration list for PBXNativeTarget "mouseplague" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E0CF27423A29704009BDDFB /* Debug */,
+				2E0CF27523A29704009BDDFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2E0CF25A23A29702009BDDFB /* Project object */;
+}
