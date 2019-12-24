@@ -10,5 +10,5 @@ This app makes each mouse connected to your Mac have a seperate cursor on the sc
 * Mouse acceleration.
 
 ### What does not work yet
-* Dragging.
-* Smooth use of MacBook internal trackpad and force-touch.
+* Hovering or dragging with any secondary cursor.
+* The MacBook internal trackpad has a delay and haptic feedback does not work if it is used as a secondary cursor.
