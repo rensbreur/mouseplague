@@ -1,8 +1,8 @@
 # mouseplague
 
-This app makes each mouse connected to your Mac have a seperate cursor on the screen.
-
 ![Screenshot](screenshot.png)
+
+This app makes each mouse connected to your Mac have a seperate cursor on the screen.
 
 This project does not have any dependencies. On running the app, macOS will ask to accept the permissions that are necessary for mouseplague to work.
 
