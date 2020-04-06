@@ -14,8 +14,9 @@ NS_ASSUME_NONNULL_BEGIN
 @interface MouseHandler : NSObject
 
 - (id)initForMouse:(IOHIDDeviceRef)device;
+- (void)close;
 
-@property (readonly) IOHIDDeviceRef device;
+@property (assign, readonly) IOHIDDeviceRef device;
 
 @end
 

@@ -25,6 +25,8 @@
     self.otherWindow.level = ((int)(CGShieldingWindowLevel())) + 1;
     [self.otherWindow setIgnoresMouseEvents:YES];
 
+    self.otherWindow.releasedWhenClosed = NO;
+
     currentX = 0;
     currentY = 0;
 }

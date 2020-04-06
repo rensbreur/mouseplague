@@ -58,7 +58,7 @@ static void Handle_InputReportCallback(void * _Nullable context, IOReturn result
     [MouseClick performClickAtPoint:point];
 }
 
-- (void)dealloc
+- (void)close
 {
     [self.mouseWindowController close];
 }
