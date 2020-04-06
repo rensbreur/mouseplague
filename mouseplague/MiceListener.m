@@ -48,6 +48,7 @@ static void Handle_RemovalCallback(void *inContext, IOReturn inResult, void * in
 - (void)removeHandlerForDevice:(IOHIDDeviceRef)device {
     for (MouseHandler *handler in _handlers) {
         if (handler.device == device) {
+            [handler close];
             [_handlers removeObject:handler];
             break;
         }
@@ -95,4 +96,11 @@ static void Handle_RemovalCallback(void *inContext, IOReturn inResult, void * in
 {
     MiceListener *controller = (__bridge MiceListener *)(inContext);
     [controller removeHandlerForDevice:inIOHIDDeviceRef];
+    if (controller.mainMouse == inIOHIDDeviceRef && controller.handlers.count > 0) {
+        MouseHandler *successorMouseHandler = controller.handlers.firstObject;
+        [successorMouseHandler close];
+        [controller.handlers removeObject:successorMouseHandler];
+        IOHIDDeviceClose(successorMouseHandler.device, 0);
+        controller.mainMouse = successorMouseHandler.device;
+    }
 }
