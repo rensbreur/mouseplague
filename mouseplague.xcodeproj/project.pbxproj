@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		2E0CF26923A29704009BDDFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E0CF26823A29704009BDDFB /* Assets.xcassets */; };
 		2E0CF26F23A29704009BDDFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0CF26E23A29704009BDDFB /* main.m */; };
-		2E0CF27823A29776009BDDFB /* MiceListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0CF27723A29776009BDDFB /* MiceListener.m */; };
-		2E0CF27B23A2978C009BDDFB /* MouseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0CF27A23A2978C009BDDFB /* MouseHandler.m */; };
+		2E0CF27823A29776009BDDFB /* MouseDeviceListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0CF27723A29776009BDDFB /* MouseDeviceListener.m */; };
+		2E0CF27B23A2978C009BDDFB /* MouseDeviceDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0CF27A23A2978C009BDDFB /* MouseDeviceDriver.m */; };
 		2E23DF0023B122EF0095AF25 /* NSScreen+Conversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E23DEFF23B122EF0095AF25 /* NSScreen+Conversion.m */; };
 		2E23DF0323B122F70095AF25 /* CursorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E23DF0123B122F70095AF25 /* CursorView.m */; };
 		2E2BE3AC23B2499500DD6F76 /* MouseClick.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BE3AB23B2499500DD6F76 /* MouseClick.m */; };
@@ -22,10 +22,10 @@
 		2E0CF26823A29704009BDDFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E0CF26D23A29704009BDDFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E0CF26E23A29704009BDDFB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2E0CF27623A29776009BDDFB /* MiceListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MiceListener.h; sourceTree = "<group>"; };
-		2E0CF27723A29776009BDDFB /* MiceListener.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MiceListener.m; sourceTree = "<group>"; };
-		2E0CF27923A2978C009BDDFB /* MouseHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MouseHandler.h; sourceTree = "<group>"; };
-		2E0CF27A23A2978C009BDDFB /* MouseHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MouseHandler.m; sourceTree = "<group>"; };
+		2E0CF27623A29776009BDDFB /* MouseDeviceListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MouseDeviceListener.h; sourceTree = "<group>"; };
+		2E0CF27723A29776009BDDFB /* MouseDeviceListener.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MouseDeviceListener.m; sourceTree = "<group>"; };
+		2E0CF27923A2978C009BDDFB /* MouseDeviceDriver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MouseDeviceDriver.h; sourceTree = "<group>"; };
+		2E0CF27A23A2978C009BDDFB /* MouseDeviceDriver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MouseDeviceDriver.m; sourceTree = "<group>"; };
 		2E23DEFE23B122EE0095AF25 /* NSScreen+Conversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSScreen+Conversion.h"; sourceTree = "<group>"; };
 		2E23DEFF23B122EF0095AF25 /* NSScreen+Conversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSScreen+Conversion.m"; sourceTree = "<group>"; };
 		2E23DF0123B122F70095AF25 /* CursorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CursorView.m; sourceTree = "<group>"; };
@@ -67,10 +67,10 @@
 			isa = PBXGroup;
 			children = (
 				2E0CF26E23A29704009BDDFB /* main.m */,
-				2E0CF27623A29776009BDDFB /* MiceListener.h */,
-				2E0CF27723A29776009BDDFB /* MiceListener.m */,
-				2E0CF27923A2978C009BDDFB /* MouseHandler.h */,
-				2E0CF27A23A2978C009BDDFB /* MouseHandler.m */,
+				2E0CF27623A29776009BDDFB /* MouseDeviceListener.h */,
+				2E0CF27723A29776009BDDFB /* MouseDeviceListener.m */,
+				2E0CF27923A2978C009BDDFB /* MouseDeviceDriver.h */,
+				2E0CF27A23A2978C009BDDFB /* MouseDeviceDriver.m */,
 				2E2BE3AD23B24ABA00DD6F76 /* CursorWindowController.h */,
 				2E2BE3AE23B24ABA00DD6F76 /* CursorWindowController.m */,
 				2E23DEFE23B122EE0095AF25 /* NSScreen+Conversion.h */,
@@ -154,11 +154,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E23DF0323B122F70095AF25 /* CursorView.m in Sources */,
-				2E0CF27B23A2978C009BDDFB /* MouseHandler.m in Sources */,
+				2E0CF27B23A2978C009BDDFB /* MouseDeviceDriver.m in Sources */,
 				2E2BE3AC23B2499500DD6F76 /* MouseClick.m in Sources */,
 				2E0CF26F23A29704009BDDFB /* main.m in Sources */,
 				2E23DF0023B122EF0095AF25 /* NSScreen+Conversion.m in Sources */,
-				2E0CF27823A29776009BDDFB /* MiceListener.m in Sources */,
+				2E0CF27823A29776009BDDFB /* MouseDeviceListener.m in Sources */,
 				2E2BE3AF23B24ABA00DD6F76 /* CursorWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

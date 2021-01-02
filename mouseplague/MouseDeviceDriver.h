@@ -1,5 +1,5 @@
 //
-//  MouseHandler.h
+//  MouseDeviceDriver.h
 //  mouseplague
 //
 //  Created by Rens Breur on 12.12.19.
@@ -11,9 +11,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MouseHandler : NSObject
+@interface MouseDeviceDriver : NSObject
 
-- (id)initForMouse:(IOHIDDeviceRef)device;
+- (id)initWithDevice:(IOHIDDeviceRef)device;
 - (void)close;
 
 @property (assign, readonly) IOHIDDeviceRef device;

@@ -11,8 +11,7 @@
 
 @implementation NSScreen (Conversion)
 
-+ (NSScreen *)screenContainingPoint:(NSPoint)point
-{
++ (NSScreen *)screenContainingPoint:(NSPoint)point {
     for (NSScreen *screen in [NSScreen screens]) {
         if (NSPointInRect(point, screen.frame))
             return screen;
@@ -20,13 +19,11 @@
     return nil;
 }
 
-+ (NSScreen *)mainScreen
-{
++ (NSScreen *)mainScreen {
     return [self screenContainingPoint:NSZeroPoint];
 }
 
-+ (CGPoint)pointFromCocoa:(NSPoint)point
-{
++ (CGPoint)pointFromCocoa:(NSPoint)point {
     return CGPointMake(point.x, NSMaxY([self mainScreen].frame) - point.y);
 }
 

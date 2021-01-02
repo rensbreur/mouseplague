@@ -17,16 +17,14 @@
 
 @implementation CursorView
 
-- (instancetype)initWithFrame:(NSRect)frameRect
-{
+- (instancetype)initWithFrame:(NSRect)frameRect {
     if (self = [super initWithFrame:frameRect]) {
         image = [NSImage imageNamed:@"cursor"];
     }
     return self;
 }
 
-- (void)drawRect:(NSRect)dirtyRect
-{
+- (void)drawRect:(NSRect)dirtyRect {
     [image drawAtPoint:NSMakePoint(0,0) fromRect:dirtyRect operation:NSCompositingOperationOverlay fraction:1.0];
 }
 

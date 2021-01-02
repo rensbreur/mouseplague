@@ -1,5 +1,5 @@
 //
-//  MiceListener.h
+//  MouseDeviceListener.h
 //  mouseplague
 //
 //  Created by Rens Breur on 12.12.19.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MiceListener : NSObject <NSApplicationDelegate>
+@interface MouseDeviceListener : NSObject <NSApplicationDelegate>
 
 @end
 

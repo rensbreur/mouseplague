@@ -10,8 +10,7 @@
 
 @implementation MouseClick
 
-+ (void)performClickAtPoint:(CGPoint)point
-{
++ (void)performClickAtPoint:(CGPoint)point {
     CGEventRef event = CGEventCreate(NULL);
     CGPoint temp = CGEventGetLocation(event);
 

@@ -7,14 +7,13 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "MiceListener.h"
+#import "MouseDeviceListener.h"
 
-int main(int argc, const char * argv[])
-{
+int main(int argc, const char * argv[]) {
     @autoreleasepool {
         NSApplication *application = [NSApplication sharedApplication];
-        MiceListener *miceListener = [[MiceListener alloc] init];
-        application.delegate = miceListener;
+        MouseDeviceListener *mouseDeviceListener = [[MouseDeviceListener alloc] init];
+        application.delegate = mouseDeviceListener;
         [application run];
     }
     return EXIT_SUCCESS;

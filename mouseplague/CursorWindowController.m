@@ -12,11 +12,13 @@
 
 @implementation CursorWindowController
 
-- (void)showCursorWindow
-{
+- (void)showCursorWindow {
     NSView *cursorView = [[CursorView alloc] initWithFrame:NSMakeRect(0, 0, 20, 25)];
 
-    self.cursorWindow = [[NSWindow alloc] initWithContentRect:NSMakeRect(0, 0, 20, 25) styleMask:NSWindowStyleMaskBorderless backing:NSBackingStoreBuffered defer:NO];
+    self.cursorWindow = [[NSWindow alloc] initWithContentRect:NSMakeRect(0, 0, 20, 25)
+                                                    styleMask:NSWindowStyleMaskBorderless
+                                                      backing:NSBackingStoreBuffered defer:NO];
+
     self.cursorWindow.contentView = cursorView;
     [self.cursorWindow makeKeyAndOrderFront:NSApp];
     self.cursorWindow.backgroundColor = [NSColor colorWithWhite:0 alpha:0];
@@ -31,15 +33,13 @@
     currentY = 0;
 }
 
-- (void)moveX:(float)x Y:(float)y
-{
+- (void)moveX:(float)x Y:(float)y {
     currentY -= y;
     currentX += x;
     [self.cursorWindow setFrameOrigin:NSMakePoint(currentX, currentY)];
 }
 
-- (void)close
-{
+- (void)close {
     [self.cursorWindow close];
 }
 
