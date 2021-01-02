@@ -1,5 +1,5 @@
 //
-//  MouseWindowController.h
+//  CursorWindowController.h
 //  mouseplague
 //
 //  Created by Rens Breur on 24.12.19.
@@ -10,16 +10,16 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MouseWindowController : NSObject {
+@interface CursorWindowController : NSObject {
 @public
     float currentX;
     float currentY;
 }
 
-@property (nonatomic, strong) NSWindow *otherWindow;
+@property (nonatomic, strong) NSWindow *cursorWindow;
 
-- (void)showPointerWindow;
-- (void)moveToX:(float)x Y:(float)y;
+- (void)showCursorWindow;
+- (void)moveX:(float)x Y:(float)y;
 
 - (void)close;
 

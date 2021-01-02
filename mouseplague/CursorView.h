@@ -1,6 +1,6 @@
 //
-//  ArrowView.h
-//  pointerpointer
+//  CursorView.h
+//  mouseplague
 //
 //  Created by Rens Breur on 11.12.19.
 //  Copyright © 2019 Rens Breur. All rights reserved.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ArrowView : NSView
+@interface CursorView : NSView
 
 @end
 

@@ -10,7 +10,7 @@
 #import "MouseHandler.h"
 #import "NSScreen+Conversion.h"
 #import "MouseClick.h"
-#import "MouseWindowController.h"
+#import "CursorWindowController.h"
 
 #define HIDUsageX 0x30
 #define HIDUsageY 0x31
@@ -26,7 +26,7 @@ static void Handle_InputValueCallback(void *context, IOReturn result, void *send
     uint64_t last_timestamp;
 }
 
-@property (nonatomic, strong) MouseWindowController *mouseWindowController;
+@property (nonatomic, strong) CursorWindowController *cursorWindowController;
 
 @end
 
@@ -44,22 +44,22 @@ static void Handle_InputValueCallback(void *context, IOReturn result, void *send
 
         IOHIDDeviceRegisterInputValueCallback(device, Handle_InputValueCallback, (__bridge void *) self);
 
-        self.mouseWindowController = [[MouseWindowController alloc] init];
-        [self.mouseWindowController showPointerWindow];
+        self.cursorWindowController = [[CursorWindowController alloc] init];
+        [self.cursorWindowController showCursorWindow];
 
     }
     return self;
 }
 
 - (void)mouseDidClick {
-    NSPoint clickPoint = NSMakePoint(self.mouseWindowController->currentX, self.mouseWindowController->currentY + 25);
+    NSPoint clickPoint = NSMakePoint(self.cursorWindowController->currentX, self.cursorWindowController->currentY + 25);
     CGPoint point = [NSScreen pointFromCocoa:clickPoint];
     [MouseClick performClickAtPoint:point];
 }
 
 - (void)close
 {
-    [self.mouseWindowController close];
+    [self.cursorWindowController close];
 }
 
 @end
@@ -89,5 +89,5 @@ static void Handle_InputValueCallback(void *context, IOReturn result, void *send
         y = IOHIDValueGetScaledValue(value, kIOHIDValueScaleTypeCalibrated);
     }
 
-    [mouseController.mouseWindowController moveToX:x Y:y];
+    [mouseController.cursorWindowController moveX:x Y:y];
 }

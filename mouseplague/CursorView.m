@@ -1,26 +1,26 @@
 //
-//  ArrowView.m
-//  pointerpointer
+//  CursorView.m
+//  mouseplague
 //
 //  Created by Rens Breur on 11.12.19.
 //  Copyright © 2019 Rens Breur. All rights reserved.
 //
 
-#import "ArrowView.h"
+#import "CursorView.h"
 #import <CoreGraphics/CoreGraphics.h>
 
-@interface ArrowView() {
+@interface CursorView() {
     NSImage *image;
 }
 
 @end
 
-@implementation ArrowView
+@implementation CursorView
 
 - (instancetype)initWithFrame:(NSRect)frameRect
 {
     if (self = [super initWithFrame:frameRect]) {
-        image = [NSImage imageNamed:@"arrow"];
+        image = [NSImage imageNamed:@"cursor"];
     }
     return self;
 }

@@ -1,6 +1,6 @@
 //
 //  NSScreen+Conversion.h
-//  CustomDrawing
+//  mouseplague
 //
 //  Created by Rens Breur on 13.12.19.
 //  Copyright © 2019 Rens Breur. All rights reserved.
