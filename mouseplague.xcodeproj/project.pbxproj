@@ -34,6 +34,8 @@
 		2E2BE3AB23B2499500DD6F76 /* MouseClick.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MouseClick.m; sourceTree = "<group>"; };
 		2E2BE3AD23B24ABA00DD6F76 /* CursorWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CursorWindowController.h; sourceTree = "<group>"; };
 		2E2BE3AE23B24ABA00DD6F76 /* CursorWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CursorWindowController.m; sourceTree = "<group>"; };
+		840F9BDC25A1205C006B942F /* screen_rec.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = screen_rec.gif; sourceTree = "<group>"; };
+		840F9BDD25A1205C006B942F /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,8 @@
 		2E0CF25923A29702009BDDFB = {
 			isa = PBXGroup;
 			children = (
+				840F9BDD25A1205C006B942F /* readme.md */,
+				840F9BDC25A1205C006B942F /* screen_rec.gif */,
 				2E0CF26423A29702009BDDFB /* mouseplague */,
 				2E0CF26323A29702009BDDFB /* Products */,
 			);

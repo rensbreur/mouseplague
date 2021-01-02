@@ -1,11 +1,19 @@
 # mouseplague
 
-![Screenshot](screenshot.png)
+![Screenshot](screen_rec.gif)
 
-This app allows your Mac to use each connected mouse or trackpad seperately with its own screen cursor.
+mouseplague gives every mouse connected to your mac its own screen cursor.
 
-On macOS 10.15 and higher, mouseplague requires the "Input Monitoring" and "Accessibility" permissions.
+### How to run
+
+* Build and run the project from within Xcode.
+* Give mouseplague the "Input Monitoring" and "Accessibility" permissions.
+
+### Compatibility
+
+The code has been tested to work for macOS 11.1 Big Sur.
 
 ### Limitations
-* Dragging and mouse-over functionality does not work with any secondary mouse.
-* The MacBook internal trackpad has a delay and haptic feedback does not work if it is used as a secondary mouse.
+
+* Dragging and mouse-over functionality only works with the first mouse connected.
+* MacBooks trackpads do not offer haptic feedback if they are used as a secondary mouse.
