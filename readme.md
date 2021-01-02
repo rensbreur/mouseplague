@@ -1,8 +1,8 @@
 # mouseplague
 
-![Screenshot](screen_rec.gif)
-
 mouseplague gives every mouse connected to your mac its own screen cursor.
+
+![Screenshot](screen_rec.gif)
 
 ### How to run
 
