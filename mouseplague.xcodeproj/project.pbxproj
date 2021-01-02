@@ -13,7 +13,6 @@
 		2E0CF27B23A2978C009BDDFB /* MouseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0CF27A23A2978C009BDDFB /* MouseHandler.m */; };
 		2E23DF0023B122EF0095AF25 /* NSScreen+Conversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E23DEFF23B122EF0095AF25 /* NSScreen+Conversion.m */; };
 		2E23DF0323B122F70095AF25 /* ArrowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E23DF0123B122F70095AF25 /* ArrowView.m */; };
-		2E2BE3A923B2439A00DD6F76 /* MouseHIDReportReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BE3A823B2439A00DD6F76 /* MouseHIDReportReader.m */; };
 		2E2BE3AC23B2499500DD6F76 /* MouseClick.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BE3AB23B2499500DD6F76 /* MouseClick.m */; };
 		2E2BE3AF23B24ABA00DD6F76 /* MouseWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BE3AE23B24ABA00DD6F76 /* MouseWindowController.m */; };
 /* End PBXBuildFile section */
@@ -31,8 +30,6 @@
 		2E23DEFF23B122EF0095AF25 /* NSScreen+Conversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSScreen+Conversion.m"; sourceTree = "<group>"; };
 		2E23DF0123B122F70095AF25 /* ArrowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrowView.m; sourceTree = "<group>"; };
 		2E23DF0223B122F70095AF25 /* ArrowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrowView.h; sourceTree = "<group>"; };
-		2E2BE3A723B2439A00DD6F76 /* MouseHIDReportReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MouseHIDReportReader.h; sourceTree = "<group>"; };
-		2E2BE3A823B2439A00DD6F76 /* MouseHIDReportReader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MouseHIDReportReader.m; sourceTree = "<group>"; };
 		2E2BE3AA23B2499500DD6F76 /* MouseClick.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MouseClick.h; sourceTree = "<group>"; };
 		2E2BE3AB23B2499500DD6F76 /* MouseClick.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MouseClick.m; sourceTree = "<group>"; };
 		2E2BE3AD23B24ABA00DD6F76 /* MouseWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MouseWindowController.h; sourceTree = "<group>"; };
@@ -76,8 +73,6 @@
 				2E0CF27A23A2978C009BDDFB /* MouseHandler.m */,
 				2E2BE3AD23B24ABA00DD6F76 /* MouseWindowController.h */,
 				2E2BE3AE23B24ABA00DD6F76 /* MouseWindowController.m */,
-				2E2BE3A723B2439A00DD6F76 /* MouseHIDReportReader.h */,
-				2E2BE3A823B2439A00DD6F76 /* MouseHIDReportReader.m */,
 				2E23DEFE23B122EE0095AF25 /* NSScreen+Conversion.h */,
 				2E23DEFF23B122EF0095AF25 /* NSScreen+Conversion.m */,
 				2E2BE3AA23B2499500DD6F76 /* MouseClick.h */,
@@ -160,7 +155,6 @@
 			files = (
 				2E23DF0323B122F70095AF25 /* ArrowView.m in Sources */,
 				2E0CF27B23A2978C009BDDFB /* MouseHandler.m in Sources */,
-				2E2BE3A923B2439A00DD6F76 /* MouseHIDReportReader.m in Sources */,
 				2E2BE3AC23B2499500DD6F76 /* MouseClick.m in Sources */,
 				2E0CF26F23A29704009BDDFB /* main.m in Sources */,
 				2E23DF0023B122EF0095AF25 /* NSScreen+Conversion.m in Sources */,
