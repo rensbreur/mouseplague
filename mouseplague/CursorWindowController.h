@@ -6,20 +6,16 @@
 //  Copyright © 2019 Rens Breur. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <AppKit/AppKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CursorWindowController : NSObject {
-@public
-    float currentX;
-    float currentY;
-}
+@interface CursorWindowController : NSObject
 
 @property (nonatomic, strong) NSWindow *cursorWindow;
 
 - (void)showCursorWindow;
-- (void)moveX:(float)x Y:(float)y;
+- (void)moveToX:(float)x Y:(float)y;
 
 - (void)close;
 

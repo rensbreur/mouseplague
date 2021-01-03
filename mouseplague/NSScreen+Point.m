@@ -6,10 +6,9 @@
 //  Copyright © 2019 Rens Breur. All rights reserved.
 //
 
-#import "NSScreen+Conversion.h"
-#import <CoreGraphics/CoreGraphics.h>
+#import "NSScreen+Point.h"
 
-@implementation NSScreen (Conversion)
+@implementation NSScreen (Point)
 
 + (NSScreen *)screenContainingPoint:(NSPoint)point {
     for (NSScreen *screen in [NSScreen screens]) {

@@ -11,10 +11,11 @@
 		2E0CF26F23A29704009BDDFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0CF26E23A29704009BDDFB /* main.m */; };
 		2E0CF27823A29776009BDDFB /* MouseDeviceListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0CF27723A29776009BDDFB /* MouseDeviceListener.m */; };
 		2E0CF27B23A2978C009BDDFB /* MouseDeviceDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0CF27A23A2978C009BDDFB /* MouseDeviceDriver.m */; };
-		2E23DF0023B122EF0095AF25 /* NSScreen+Conversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E23DEFF23B122EF0095AF25 /* NSScreen+Conversion.m */; };
+		2E23DF0023B122EF0095AF25 /* NSScreen+Point.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E23DEFF23B122EF0095AF25 /* NSScreen+Point.m */; };
 		2E23DF0323B122F70095AF25 /* CursorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E23DF0123B122F70095AF25 /* CursorView.m */; };
 		2E2BE3AC23B2499500DD6F76 /* MouseClick.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BE3AB23B2499500DD6F76 /* MouseClick.m */; };
 		2E2BE3AF23B24ABA00DD6F76 /* CursorWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BE3AE23B24ABA00DD6F76 /* CursorWindowController.m */; };
+		840F9BE125A1D369006B942F /* CursorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840F9BE025A1D369006B942F /* CursorController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +27,8 @@
 		2E0CF27723A29776009BDDFB /* MouseDeviceListener.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MouseDeviceListener.m; sourceTree = "<group>"; };
 		2E0CF27923A2978C009BDDFB /* MouseDeviceDriver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MouseDeviceDriver.h; sourceTree = "<group>"; };
 		2E0CF27A23A2978C009BDDFB /* MouseDeviceDriver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MouseDeviceDriver.m; sourceTree = "<group>"; };
-		2E23DEFE23B122EE0095AF25 /* NSScreen+Conversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSScreen+Conversion.h"; sourceTree = "<group>"; };
-		2E23DEFF23B122EF0095AF25 /* NSScreen+Conversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSScreen+Conversion.m"; sourceTree = "<group>"; };
+		2E23DEFE23B122EE0095AF25 /* NSScreen+Point.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSScreen+Point.h"; sourceTree = "<group>"; };
+		2E23DEFF23B122EF0095AF25 /* NSScreen+Point.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSScreen+Point.m"; sourceTree = "<group>"; };
 		2E23DF0123B122F70095AF25 /* CursorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CursorView.m; sourceTree = "<group>"; };
 		2E23DF0223B122F70095AF25 /* CursorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CursorView.h; sourceTree = "<group>"; };
 		2E2BE3AA23B2499500DD6F76 /* MouseClick.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MouseClick.h; sourceTree = "<group>"; };
@@ -36,6 +37,8 @@
 		2E2BE3AE23B24ABA00DD6F76 /* CursorWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CursorWindowController.m; sourceTree = "<group>"; };
 		840F9BDC25A1205C006B942F /* screen_rec.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = screen_rec.gif; sourceTree = "<group>"; };
 		840F9BDD25A1205C006B942F /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		840F9BDF25A1D369006B942F /* CursorController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CursorController.h; sourceTree = "<group>"; };
+		840F9BE025A1D369006B942F /* CursorController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CursorController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,14 +78,16 @@
 				2E0CF27723A29776009BDDFB /* MouseDeviceListener.m */,
 				2E0CF27923A2978C009BDDFB /* MouseDeviceDriver.h */,
 				2E0CF27A23A2978C009BDDFB /* MouseDeviceDriver.m */,
+				840F9BDF25A1D369006B942F /* CursorController.h */,
+				840F9BE025A1D369006B942F /* CursorController.m */,
 				2E2BE3AD23B24ABA00DD6F76 /* CursorWindowController.h */,
 				2E2BE3AE23B24ABA00DD6F76 /* CursorWindowController.m */,
-				2E23DEFE23B122EE0095AF25 /* NSScreen+Conversion.h */,
-				2E23DEFF23B122EF0095AF25 /* NSScreen+Conversion.m */,
-				2E2BE3AA23B2499500DD6F76 /* MouseClick.h */,
-				2E2BE3AB23B2499500DD6F76 /* MouseClick.m */,
 				2E23DF0223B122F70095AF25 /* CursorView.h */,
 				2E23DF0123B122F70095AF25 /* CursorView.m */,
+				2E23DEFE23B122EE0095AF25 /* NSScreen+Point.h */,
+				2E23DEFF23B122EF0095AF25 /* NSScreen+Point.m */,
+				2E2BE3AA23B2499500DD6F76 /* MouseClick.h */,
+				2E2BE3AB23B2499500DD6F76 /* MouseClick.m */,
 				2E0CF26823A29704009BDDFB /* Assets.xcassets */,
 				2E0CF26D23A29704009BDDFB /* Info.plist */,
 			);
@@ -161,9 +166,10 @@
 				2E0CF27B23A2978C009BDDFB /* MouseDeviceDriver.m in Sources */,
 				2E2BE3AC23B2499500DD6F76 /* MouseClick.m in Sources */,
 				2E0CF26F23A29704009BDDFB /* main.m in Sources */,
-				2E23DF0023B122EF0095AF25 /* NSScreen+Conversion.m in Sources */,
+				2E23DF0023B122EF0095AF25 /* NSScreen+Point.m in Sources */,
 				2E0CF27823A29776009BDDFB /* MouseDeviceListener.m in Sources */,
 				2E2BE3AF23B24ABA00DD6F76 /* CursorWindowController.m in Sources */,
+				840F9BE125A1D369006B942F /* CursorController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,11 +6,8 @@
 //  Copyright © 2019 Rens Breur. All rights reserved.
 //
 
-#import <AppKit/AppKit.h>
 #import "MouseDeviceDriver.h"
-#import "NSScreen+Conversion.h"
-#import "MouseClick.h"
-#import "CursorWindowController.h"
+#import "CursorController.h"
 
 #define kHIDUsageX 0x30
 #define kHIDUsageY 0x31
@@ -20,7 +17,7 @@ static void Handle_InputValueCallback(void *context, IOReturn result, void *send
 
 @interface MouseDeviceDriver ()
 
-@property (nonatomic, strong) CursorWindowController *cursorWindowController;
+@property (nonatomic, strong) CursorController *cursorController;
 
 @end
 
@@ -38,22 +35,18 @@ static void Handle_InputValueCallback(void *context, IOReturn result, void *send
 
         IOHIDDeviceRegisterInputValueCallback(device, Handle_InputValueCallback, (__bridge void *) self);
 
-        self.cursorWindowController = [[CursorWindowController alloc] init];
-        [self.cursorWindowController showCursorWindow];
+        self.cursorController = [[CursorController alloc] init];
 
     }
     return self;
 }
 
 - (void)mouseDidClick {
-    NSPoint clickPoint = NSMakePoint(self.cursorWindowController->currentX,
-                                     self.cursorWindowController->currentY + 25);
-    CGPoint point = [NSScreen pointFromCocoa:clickPoint];
-    [MouseClick performClickAtPoint:point];
+    [self.cursorController performClick];
 }
 
 - (void)close {
-    [self.cursorWindowController close];
+//    [self.cursorWindowController close];
 }
 
 @end
@@ -82,5 +75,5 @@ static void Handle_InputValueCallback(void *context, IOReturn result, void *send
         y = IOHIDValueGetScaledValue(value, kIOHIDValueScaleTypeCalibrated);
     }
 
-    [mouseController.cursorWindowController moveX:x Y:y];
+    [mouseController.cursorController moveX:x Y:y];
 }

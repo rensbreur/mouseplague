@@ -6,9 +6,11 @@
 //  Copyright © 2019 Rens Breur. All rights reserved.
 //
 
-#import <AppKit/AppKit.h>
 #import "CursorView.h"
 #import "CursorWindowController.h"
+
+#define kCursorWindowXCalibr 4
+#define kCursorWindowYCalibr 20
 
 @implementation CursorWindowController
 
@@ -28,15 +30,10 @@
     [self.cursorWindow setIgnoresMouseEvents:YES];
 
     self.cursorWindow.releasedWhenClosed = NO;
-
-    currentX = 0;
-    currentY = 0;
 }
 
-- (void)moveX:(float)x Y:(float)y {
-    currentY -= y;
-    currentX += x;
-    [self.cursorWindow setFrameOrigin:NSMakePoint(currentX, currentY)];
+- (void)moveToX:(float)x Y:(float)y {
+    [self.cursorWindow setFrameOrigin:NSMakePoint(x - kCursorWindowXCalibr, y - kCursorWindowYCalibr)];
 }
 
 - (void)close {
