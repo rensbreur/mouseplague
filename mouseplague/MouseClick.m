@@ -16,13 +16,11 @@
 
     CGEventRef click1_down = CGEventCreateMouseEvent(NULL, kCGEventLeftMouseDown, point, kCGMouseButtonLeft);
     CGEventRef click1_up = CGEventCreateMouseEvent(NULL, kCGEventLeftMouseUp, point, kCGMouseButtonLeft);
-    CGEventPost(kCGHIDEventTap, click1_down);
-    CGEventPost(kCGHIDEventTap, click1_up);
+    CGEventPost(kCGSessionEventTap, click1_down);
+    CGEventPost(kCGSessionEventTap, click1_up);
 
-    CGEventRef move1 = CGEventCreateMouseEvent(NULL, kCGEventMouseMoved, temp, kCGMouseButtonLeft );
-    CGEventPost(kCGHIDEventTap, move1);
+    CGWarpMouseCursorPosition(temp);
 
-    CFRelease(move1);
     CFRelease(click1_up);
     CFRelease(click1_down);
 }
