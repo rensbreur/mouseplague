@@ -62,4 +62,8 @@
     [MouseClick performClickAtPoint:point];
 }
 
+- (void)stop {
+    [self.cursorWindowController close];
+}
+
 @end

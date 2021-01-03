@@ -46,7 +46,7 @@ static void Handle_InputValueCallback(void *context, IOReturn result, void *send
 }
 
 - (void)close {
-//    [self.cursorWindowController close];
+    [self.cursorController stop];
 }
 
 @end
